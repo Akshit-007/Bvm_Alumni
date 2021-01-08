@@ -37,18 +37,19 @@ import './index.css'
             <Link to='/batchmates' style={{textDecoration: 'none'}}><li>BATCHMATES</li></Link>
             
             <Link to='/donation' style={{textDecoration: 'none'}}><li>DONATION</li></Link>
-            <Link to='/login' style={{textDecoration: 'none'}}><li>Login</li></Link>
+            <Link to='/login' style={{textDecoration: 'none'}}><li>LOGIN</li></Link>
             </ul>
     </div>
 
     {display?<div className="nav1">
         <ul>
+        <Link to='/' style={{textDecoration: 'none'}}><li>Home</li></Link>
             <Link to='/event' style={{textDecoration: 'none'}}><li>EVENTS</li></Link>
             <Link to='/news' style={{textDecoration: 'none'}}><li>NEWS</li></Link>
             <Link to='/batchmates' style={{textDecoration: 'none'}}><li>BATCHMATES</li></Link>
-            <Link to='/about' style={{textDecoration: 'none'}}><li>ABOUT</li></Link>
+            
             <Link to='/donation' style={{textDecoration: 'none'}}><li>DONATION</li></Link>
-            <Link to='/login' style={{textDecoration: 'none'}}><li>Login</li></Link>
+            <Link to='/login' style={{textDecoration: 'none'}}><li>LOGIN</li></Link>
             </ul>
     </div>:<div></div>}
   

@@ -9,6 +9,9 @@ import Login from './Login'
 import Event from './Event'
 import Home from './Home'
 import Batchmate from './Batchmate'
+import Motivationa from './Motivationa'
+import Motivationb from './Motivationb'
+import Motivationc from './Motivationc'
 
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 
@@ -29,6 +32,9 @@ function App() {
         <Route path="/news" exact component={News}/>
         <Route path="/batchmates" exact component={Batchmate}/>
         <Route path="/donation" exact component={Donation}/>
+        <Route path="/motivationa" exact component={Motivationa}/>
+        <Route path="/motivationb" exact component={Motivationb}/>
+        <Route path="/motivationc" exact component={Motivationc}/>
         </Switch>
      
     </Router>

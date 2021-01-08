@@ -1,7 +1,4 @@
-import React from 'react'
-import About from './About'
-import News from './News'
-import Event from './Event'
+import React, { useEffect } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import image1 from './bg.jpg'
 import image2 from './images.jpg'
@@ -9,10 +6,20 @@ import image3 from './boys.webp'
 import image5 from './mimg.jpg'
 import './index.css'
 import { Link } from 'react-router-dom'
+import AOS from 'aos'
+import "aos/dist/aos.css"
+
 
 
 function Home()
 {
+
+useEffect(()=>{
+  AOS.init({
+    duration:1000
+  });
+  AOS.refresh();
+},[])
     return(
         <div>
 
@@ -57,14 +64,72 @@ function Home()
   </Carousel.Item>
 </Carousel>
 
-<div className="newsline"><marquee>
+
+    <div className="newsline">
+  <marquee>
     <ul>
-        <li>News 1 </li>
-        <li>News 2 </li>
-        <li>News 3 </li>
+      <div className="title">
+      <Link to='/motivationa' style={{textDecoration: 'none'}}><li>Rise of a novelist in the league of BVMites </li></Link>
+    <Link to='/motivationb' style={{textDecoration: 'none'}}><li>Change your thoughts and you change your world</li></Link>
+    <Link to='/motivationc' style={{textDecoration: 'none'}}><li>Believe you can and you’re halfway there.</li></Link>
+      </div>
     </ul>
-    </marquee></div>
-    <h1 className="event">Events</h1>
+    </marquee>
+</div>
+
+<h1 className="visit" data-aos="slide-up">Blogs</h1>
+
+
+    <div class="card-container">
+        <div class="cards">
+          <header class="article-header">
+            <h2 class="article-title">Inside Higher Education</h2>
+          </header>
+            <p class="p1">This is a great source of content for anyone in higher education, including those looking for jobs. They have sections including Admissions, Books, Technology, Career Advice, and Diversity. They also offer a number of webinars and research in the higher ed space. 
+            </p>
+        </div>
+        <div class="cards">
+          <header class="article-header">
+            <h2 class="article-title">The Learning Network </h2>
+          </header>
+            <p class="p1">This blog is under the New York Times umbrella. Their main audiences are teachers, students, and parents that want to use the NYTs content as inspiration for teaching materials. Teachers can use the section "Text to text" as lesson plans in areas such as American History, Civics, Current Events, and Social Studies.
+            </p>
+        </div>
+        <div class="cards">
+          <header class="article-header">
+            <h2 class="article-title">Classroom 2.0</h2>
+          </header>
+          
+            <p class="p1">This blog is focused on bringing social media and web 2.0 into the classroom. It's not just a destination for content, but also acts as a social network for educators that are looking to learn more about integrating online strategies into their classrooms.They have groups at different schools that you can join. 
+            </p>
+          
+        </div>
+        <div class="cards">
+          <header class="article-header">
+            <h2 class="article-title">TeacherTube</h2>
+          </header>
+          
+            <p class="p1">This is an online community for teachers to share videos of instructional learning. For teachers in any school or even home teachers, this is a destination to learn from your peers. You can also find photos, videos, and audio recordings to use in your curriculum. You can also join different groups focused on specific topics.
+            </p>
+          
+        </div>
+        <div class="cards">
+          <header class="article-header">
+            <h2 class="article-title"> TechThought</h2>
+          </header>
+            <p class="p1">This progressive blog is for all educators who are looking to be more digitally connected. They have great sections on testing with technology, best practices for iPads in the classroom, what hashtags to follow on Twitter, and research around how thinking habits and neuroscience impact students' learning processes.
+            </p>
+        </div>
+        <div class="cards">
+          <header class="article-header">
+            <h2 class="article-title">Homeroom</h2>
+          </header>
+          <p class="p1">This blog is all about technology in the education space. They provide tactful advice about incorporating technology in the classroom, including a teacher's guide to technology and learning as well as product reviews on the best laptops, tablets, and apps for teachers. They also provide best practices for online learning.
+          </p>
+        </div>
+      </div>
+
+    <h1 className="visit" data-aos="slide-left">Events</h1>
     <div className="evntcard">
         <div className="event1">
 
@@ -136,11 +201,11 @@ function Home()
          <div class="row  justify-content-center py-3">
              <div class="col-11">
                  <div class="row ">
-                     <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                     <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a3">
                          <h3 class="text-muted mb-md-0 mb-5 bold-text">BVM,</h3>
                          <h3 class="text-muted mb-md-0 mb-5 bold-text">ALUMNI ASSOCIATION</h3>
                      </div>
-                     <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-12 a2 ">
                          <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
                          <ul class="list-unstyled">
                              <li>Home</li>
@@ -149,40 +214,44 @@ function Home()
                              <li>News</li>                             
                          </ul>
                      </div>
-                     <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-12 a4">
                          <h6 class="mb-3 mb-lg-4 bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
                          <p class="mb-1">BVM Engineering College,</p>
                          <p> Vallabh Vidyanagar - 388 120. GUJARAT, INDIA.</p>
                      </div>
                  </div>
-                 <div class="row ">
-                 <div class="col-xl-2 col-md-2 col-sm-2 col-auto order-1">
+                 <div class="row row1">
+                 <div class="col-xl-2 col-md-2 col-sm-2 col-auto order-1 a1">
                           <h6 class="mt-55 mt-2 text-muted bold-text"><b>AKSHIT TRIVEDI</b></h6>
-                          <small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                             akshittrivedi@gmail.com
+                          <small> <span><i class="fa fa-envelope a1" aria-hidden="true"></i></span>
+                            akshittrivedi495@gmail.com
                           </small>
                      </div>
-                     <div class="col-xl-2 col-md-2 col-sm-2 col-auto order-2">
+                 <div class="col-xl-2 col-md-2 col-sm-2 col-auto order-2 a1">
                          <h6 class="mt-55 mt-2 text-muted bold-text"><b>SAHIL DABHI</b></h6>
-                         <small><span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                         <small><span><i class="fa fa-envelope a1" aria-hidden="true"></i></span>
                                 sahildabhi0101@gmail.com
                          </small>
                      </div>
-                     <div class="col-xl-2 col-md-2 col-sm-2 col-auto order-3">
+                 <div class="col-xl-2 col-md-2 col-sm-2 col-auto order-3 a1">
                          <h6 class="mt-55 mt-2 text-muted bold-text"><b>RAHUL SANNIGRAHI</b></h6>
-                         <small><span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                         <small><span><i class="fa fa-envelope a1" aria-hidden="true"></i></span>
                                 rahulsannigrahy@gmail.com
                          </small>
                      </div>
-                     <div class="col-xl-6 col-md-2 col-sm-2 foo my-3 order-4">
+                 <div class="col-xl-6 col-md-2 col-sm-2 foo my-3 order-4">
                         <p class="social text-muted mb-0 pb-0 bold-text"> 
+                        <div class="a5">
                         <span class="mx-2"><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
                         <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
                         <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span>
                         <span class="mx-2"><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
                         <span class="mx-2"><i class="fa fa-youtube-square" aria-hidden="true"></i></span>
-                        </p><small class="rights">2021 <span>&#174;</span> Alumni , All Rights Reserved.</small>
-                     </div>
+                        </div>
+                        </p>
+                        
+                        <div class="rights a6">2021 &#174; Alumni , All Rights Reserved.</div>
+                  </div>
                  </div>
              </div>
          </div>
