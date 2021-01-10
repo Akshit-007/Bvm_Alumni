@@ -31,7 +31,7 @@ import './index.css'
     </div>
     <div className="nav">
         <ul>
-             <Link to='/' style={{textDecoration: 'none'}}><li>Home</li></Link>
+             <Link to='/' style={{textDecoration: 'none'}}><li>HOME</li></Link>
             <Link to='/event' style={{textDecoration: 'none'}}><li>EVENTS</li></Link>
             <Link to='/news' style={{textDecoration: 'none'}}><li>NEWS</li></Link>
             <Link to='/batchmates' style={{textDecoration: 'none'}}><li>BATCHMATES</li></Link>
@@ -43,7 +43,7 @@ import './index.css'
 
     {display?<div className="nav1">
         <ul>
-        <Link to='/' style={{textDecoration: 'none'}}><li>Home</li></Link>
+        <Link to='/' style={{textDecoration: 'none'}}><li>HOME</li></Link>
             <Link to='/event' style={{textDecoration: 'none'}}><li>EVENTS</li></Link>
             <Link to='/news' style={{textDecoration: 'none'}}><li>NEWS</li></Link>
             <Link to='/batchmates' style={{textDecoration: 'none'}}><li>BATCHMATES</li></Link>
