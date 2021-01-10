@@ -15,21 +15,21 @@ function Event()
     const [event,setevent]=useState(1);
     
     var text;
-    var prev;
+  
     if(event==1)
     {
           text=<Uevent />;
-          prev="";
+        
     }
     else if(event==2)
     {
         text=<Pevent />;
-        prev="";
+   
 
     }
     else{
-        text=<Uevent />;
-        prev=<Pevent />;
+        text=<Pevent />;
+       
 
     }
     return(
@@ -41,7 +41,7 @@ function Event()
             </div>
              {text}
              
-             {prev}
+        
            
 
         </div>

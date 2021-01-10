@@ -1,4 +1,3 @@
-input,
 textarea {
     background-color: #F3E5F5;
     border-radius: 50px !important;
@@ -11,7 +10,6 @@ textarea {
     color: #000 !important;
     font-weight: 400
 }
-
 input:focus,
 textarea:focus {
     -moz-box-shadow: none !important;
@@ -21,18 +19,16 @@ textarea:focus {
     outline-width: 0;
     font-weight: 400
 }
-
 button:focus {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     outline-width: 0
 }
-
 .card {
     border-radius: 0;
     border: none;
-    color: black;
+    color: #000;
 }
 
 .card1 {
@@ -44,6 +40,10 @@ button:focus {
     width: 50%;
     background-image: linear-gradient(to right, #FFD54F, #D500F9)
 }
+.my-4{
+    font-size: 20px;
+    color: #fd0b0b;
+}
 .link{
     background-color: #333333;
     color: white;
@@ -51,6 +51,9 @@ button:focus {
     text-align: center;
 }
 .links i{margin: 1rem;}
+.fa-facebook:hover , .fa-twitter:hover{
+    font-size: 30px;
+}
 #logo {
     width: 70px;
     height: 60px
@@ -128,19 +131,17 @@ a:hover {
 .sm-text {
     font-size: 15px
 }
-.fa-twitter:hover{
-    font-size: 30px;
+.che5{ font-size: 15px; }
+.che4{ margin-bottom: 10px; }
+.che1
+{
+    margin-top: 10px;
+    margin-left: 10px;
 }
-.fa-facebook:hover{
-    font-size: 30px;
-
-}
-.my-4{
-    font-size: 20px;
-    color:red;
-}
-
-
+.card .che2 {
+    margin-top: 15px;
+    margin-bottom: 5px;}
+.card .che3 {margin-top: 0px;}
 @media screen and (max-width: 992px) {
     .card1 {
         width: 100%;
@@ -167,7 +168,7 @@ a:hover {
     }
 
     .right {
-        margin-top: 50px !important;
-        margin-bottom: 50px !important
+        margin-top: 50px;
+        margin-bottom: 50px; 
     }
 }

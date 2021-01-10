@@ -1,5 +1,6 @@
 *{
   margin: 0px;
+  
 }
 .head{
   width:100vw;
@@ -304,6 +305,9 @@
   padding-top: 160px;
 
 }
+.fa-close{
+  display: none;
+}
 
 
 
@@ -390,8 +394,149 @@
    
  }
 }
-@media only screen and (max-width:681px) and (min-width:290px)
+@media only screen and (max-width:681px) and (min-width:351px)
 {
+  .head{
+    grid-template-columns: 0.5fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+       "img name "
+       "search search"
+    ;
+    
+  
+  }
+  .name{
+    padding-top: 10px;
+    font-size: 15px;
+  }
+  .nav{
+    display: none;
+  }
+  .nav1{
+    margin-top: 0%;
+    width:100vw;
+    min-height:250px;
+    background-color: darksalmon;
+    display: block;
+   
+  }
+  .nav1 ul{
+     /* background-color: darkturquoise; */
+    color: azure;
+     margin: 10px auto;
+     justify-content: left;
+  }
+  
+  .nav1 ul li{
+  
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display:block;
+    padding-left:0px;
+    padding-right: 0px;
+    color: white;
+    text-decoration: none;
+  width:100px;
+    
+  }
+  .nav1 ul li:hover{
+    background-color: white;
+    color:darksalmon;
+    cursor: pointer;
+    border-bottom: 3px solid blue;
+
+  
+  
+  }
+  .contact
+  {
+    display: none;
+  }
+   .fa-server{
+    display: inline;
+    margin-left: 17%;
+  }
+  .fa-close{
+    display: inline;
+    margin-left: 17%;
+  }
+  .fa-close :hover{
+    cursor: pointer;
+  }
+  .fa-server :hover{
+    cursor: pointer;
+  }
+  .search{
+    background-color: darksalmon;
+    padding-top:10px;
+    padding-left: 10px;
+  }
+  .intx{
+       width: 150px;
+  }
+  .map{
+   
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "mimg"
+    "map"    
+  ;
+  /* grid-gap:5px; */
+ }
+ .evntcard
+ {
+   height:1200px;
+    grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr 0.5fr;
+   grid-template-areas: 
+      
+     "e1"
+     "e2"
+     "e3"
+     "e4"
+   ;
+ }
+ .event1
+ {
+   padding-left: 15%;
+ 
+ }
+ .event2
+ {
+  padding-left: 15%;
+
+ }
+ .event3
+ {
+  padding-left: 15%;
+
+ }
+ .event4
+ {
+  padding-top: 20%;
+ 
+   justify-content: center;
+   margin: 0px auto;
+   
+ }
+ .member{
+  width:200px;
+
+ }
+  
+}
+
+@media only screen and (max-width:350px) and (min-width:281px)
+{
+  .fa-close{
+    display: inline;
+    margin-left: 17%;
+  }
+  .fa-close :hover{
+    cursor: pointer;
+  }
   .head{
     grid-template-columns: 0.5fr 1fr ;
     grid-template-rows: 1fr 1fr;
@@ -465,7 +610,7 @@
        width: 150px;
   }
   .map{
-   
+   height: 450px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -489,15 +634,18 @@
  }
  .event1
  {
-   padding-left: 30px;
+   padding-left: 10px;
+ 
  }
  .event2
  {
-   padding-left: 30px;
+  padding-left: 10px;
+
  }
  .event3
  {
-   padding-left: 30px;
+  padding-left: 10px;
+
  }
  .event4
  {
@@ -511,7 +659,6 @@
   width:200px;
 
  }
-  
 }
 
 
@@ -654,7 +801,7 @@ margin-bottom: 2px;}
   padding: 0px 0px;
   }
   .a6{
-    /* justify-content: left; */
+
     display: block;
     width: 220px;
     padding:0px;
@@ -756,7 +903,7 @@ body
       font-weight: 700;
   }
 
-    /* .cards .p1{font-size:0.8rem;} */
+    
     .card-container .cards .p1{font-size: 1rem;}
     .p1{width: 100%;}
     .cards:not(:first-child) { margin-top: -10rem;}

@@ -1,0 +1,66 @@
+
+
+
+
+.m1{
+    color: black;
+    
+    
+}
+
+ .heading{
+    text-align: center;
+} 
+.m5
+{
+    font-size: 50px;
+    margin-left: 250px;
+    background-color: rgb(143, 214, 190);
+}
+.m2
+{
+    font-size: 50px;
+    margin-left: 120px;
+    background-color: rgb(143, 214, 190);
+}
+.m9
+{
+    font-size: 40px;
+    /* margin-left: 120px; */
+    background-color: rgb(143, 214, 190);   
+    height: 150px;
+    padding-top: 20px;
+}
+
+.m3
+{
+    /* margin-left: 120px; */
+    font-size: 35px;
+    margin-top: 40px;
+}
+.m10
+{
+    font-size: 40px;
+}
+.m4
+{
+    margin-top: 20px;
+    text-align: left;
+}
+.m6
+{
+   color: rgb(243, 14, 14); 
+   background-color: rgb(215, 238, 168);
+   font-size: 40px;
+}
+.m7
+{
+   color: rgb(243, 14, 14); 
+   background-color: rgb(215, 238, 168);
+   font-size: 20px;
+}
+.m8
+{
+    background-color: rgb(253, 93, 44);
+    color: rgb(252, 236, 173);
+}

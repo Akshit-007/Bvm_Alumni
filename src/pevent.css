@@ -91,8 +91,82 @@
         ;
       }
   }
-  @media only screen and (max-width:600px) and (min-width:200px)
+  @media only screen and (max-width:600px) and (min-width:401px)
   {
+    .et1{
+      margin-left: 100px;
+    }
+    .et2{
+      margin-left: 100px;
+    }
+    .et3{
+      margin-left: 100px;
+    }
+    .et4{
+      margin-left: 100px;
+    }
+    .et5{
+      margin-left: 100px;
+    }
+    .et6{
+      margin-left: 100px;
+    }
+    .et7{
+      margin-left: 100px;
+    }
+    .et8{
+      margin-left: 100px;
+    }
+
+      
+  
+    .ecard{
+        height:2600px;
+              
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-areas: 
+            
+                  "e1"
+                  "e2"
+                  "e3"
+                  "e4"
+                  "e5"
+                  "e6"
+                  "e7"
+                  "e8"
+                  
+                        
+            ;
+          }
+      }
+  @media only screen and (max-width:400px) and (min-width:200px)
+  {
+    .et1{
+      margin-left: 20px;
+    }
+    .et2{
+      margin-left: 20px;
+    }
+    .et3{
+      margin-left: 20px;
+    }
+    .et4{
+      margin-left: 20px;
+    }
+    .et5{
+      margin-left: 20px;
+    }
+    .et6{
+      margin-left: 20px;
+    }
+    .et7{
+      margin-left: 20px;
+    }
+    .et8{
+      margin-left: 20px;
+    }
+
       
   
     .ecard{

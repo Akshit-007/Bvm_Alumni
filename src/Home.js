@@ -1,13 +1,17 @@
 import React, { useEffect } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import image1 from './bg.jpg'
-import image2 from './images.jpg'
+import image2 from './event.jpg'
+import image8 from './event1.jpg'
+import image7 from './event3.jpg'
 import image3 from './boys.webp'
 import image5 from './mimg.jpg'
 import './index.css'
 import { Link } from 'react-router-dom'
 import AOS from 'aos'
 import "aos/dist/aos.css"
+import './pcorner.css'
+import image6 from './ip.jpg'
 
 
 
@@ -129,14 +133,13 @@ useEffect(()=>{
         </div>
       </div>
 
-    <h1 className="visit" data-aos="slide-left">Events</h1>
+    <h1 className="visit" >Events</h1>
     <div className="evntcard">
         <div className="event1">
-
          <div class="flip-card">
          <div class="flip-card-inner">
          <div class="flip-card-front">
-         <img src={image2} alt="Avatar" />
+         <img src={image2} alt="Avatar" height="200px" width="240px"/>
          </div>
          <div class="flip-card-back">
          <h1>Event Name</h1>
@@ -153,7 +156,7 @@ useEffect(()=>{
         <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src={image2} alt="Avatar" />
+      <img src={image8} alt="Avatar" height="200px" width="240px"/>
     </div>
     <div class="flip-card-back">
       <h1>Event Name</h1>
@@ -170,7 +173,7 @@ useEffect(()=>{
         <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src={image2} alt="Avatar"  />
+      <img src={image7} alt="Avatar" height="200px" width="240px" />
     </div>
     <div class="flip-card-back">
       <h1>Event Name</h1>
@@ -183,10 +186,32 @@ useEffect(()=>{
         </div>
         <div className="event4"> <Link to='/event' style={{textDecoration: 'none'}}><button  className="wevnt">More Events</button></Link></div>
     </div>
-    
-
-
-<div className="gap"></div>
+<div className="pmessage">
+<div class="p-message">
+        <p class="p3">Valuable Words of PRINCIPAL</p>
+        <div class="p10">
+          <div class="p101">
+            <img src={image6} alt="principal-image"   class="p5" />
+            <div class="p1011">
+              <br />Dear All,<br/>Birla Vishvakarma Mahavidyalaya Engineering College (BVM), an institution of Charutar Vidya Mandal, is the<span class="p4">first engineering college of state(Since 1948) as well as first autonomous college of state(since 2015)</span> established in 1948 by inspiration and motivation of Iron man of India Shri Sardar Patel and generous  contribution from <span class="p4">Shri Ghanshyamdasji Birla</span> which is committed to emerge and disseminate word class unique  learning experience through research based education and innovation across sphere.  <br /><br />
+              This premier technical  institution has nurtured 20,000+ engineers and continuously evolved with the facilities like best  infrastructure, state of art Laboratories upgraded with instruments and utility software packages, enriched  library, central computing and net station, canteen, play field, gymnasium, medical facilities, hostel and  residence quarters.
+            </div>
+          </div>
+          <div class="p102">
+            <br /><br /><span class="p4">I am proud to say BVM is awarded with Best
+            overall performing Engineering College 2018-19 and among top 300 by NIRF 2020.</span> <br />Meritorious students of  Gujarat (Upto rank 2000) take the admission in BVM. It is one of the leading institutions across Gujarat  which is renowned for its excellent placement record. 100+corporates visit the college for conducting Campus  Interviews and <span class="p4">more than 90% eligible students are placed through campus drive every year </span> of various department is contributing through R& D projects under  different state level and international level funding Agencies.Faculties are also providing traditional
+            consultancy in various sectors and firms.  <br /><br /> 
+            <div class="p1013">To make our engineers “INDUSTRY READY” according to the benchmark  of Industry 4.0, Institute has established Industry institute interaction programme under which 200 faculty - 200 industries are collaborated to provide the industrial platform to the students and faculties. Number  of MOUs are done between top industries at National/International level through which industry experts are
+            giving their guidance and expertise for events like Project expo, expert talks, seminars, workshops,  industry tour etc.</div><br />
+            
+            <br/>My Best Wishes to all of you!!!!!
+            <br /><br /> (Dr.) Indrajit Patel,
+            <br />Principal,
+            <br />BVM engineering college.
+          </div>
+        </div>
+      </div>
+</div>
 <h1 className="visit">Visit Us</h1>
 
 <div className="map">
@@ -208,10 +233,10 @@ useEffect(()=>{
                      <div class="col-xl-2 col-md-4 col-sm-4 col-12 a2 ">
                          <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
                          <ul class="list-unstyled">
-                             <li>Home</li>
-                             <li>About</li>
-                             <li>Event</li>
-                             <li>News</li>                             
+                         <li><a href="/"  style={{textDecoration: 'none'}} class="text-muted">Home</a></li>
+                    <li><a href="/event"  style={{textDecoration: 'none'}} class="text-muted">Event</a></li>
+                    <li><a href="/news"  style={{textDecoration: 'none'}} class="text-muted">News</a></li>
+                    <li><a href="/batchmates"  style={{textDecoration: 'none'}} class="text-muted">Batchmates</a></li>                            
                          </ul>
                      </div>
                      <div class="col-xl-2 col-md-4 col-sm-4 col-12 a4">
@@ -222,19 +247,19 @@ useEffect(()=>{
                  </div>
                  <div class="row row1">
                  <div class="col-xl-2 col-md-2 col-sm-2 col-auto order-1 a1">
-                          <h6 class="mt-55 mt-2 text-muted bold-text"><b>AKSHIT TRIVEDI</b></h6>
+                          <h6 class="mt-55 mt-2 bold-text"><b>AKSHIT TRIVEDI</b></h6>
                           <small> <span><i class="fa fa-envelope a1" aria-hidden="true"></i></span>
                             akshittrivedi495@gmail.com
                           </small>
                      </div>
                  <div class="col-xl-2 col-md-2 col-sm-2 col-auto order-2 a1">
-                         <h6 class="mt-55 mt-2 text-muted bold-text"><b>SAHIL DABHI</b></h6>
+                         <h6 class="mt-55 mt-2 bold-text"><b>SAHIL DABHI</b></h6>
                          <small><span><i class="fa fa-envelope a1" aria-hidden="true"></i></span>
                                 sahildabhi0101@gmail.com
                          </small>
                      </div>
                  <div class="col-xl-2 col-md-2 col-sm-2 col-auto order-3 a1">
-                         <h6 class="mt-55 mt-2 text-muted bold-text"><b>RAHUL SANNIGRAHI</b></h6>
+                         <h6 class="mt-55 mt-2 bold-text"><b>RAHUL SANNIGRAHI</b></h6>
                          <small><span><i class="fa fa-envelope a1" aria-hidden="true"></i></span>
                                 rahulsannigrahy@gmail.com
                          </small>
@@ -242,23 +267,21 @@ useEffect(()=>{
                  <div class="col-xl-6 col-md-2 col-sm-2 foo my-3 order-4">
                         <p class="social text-muted mb-0 pb-0 bold-text"> 
                         <div class="a5">
-                        <span class="mx-2"><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
-                        <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
-                        <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span>
-                        <span class="mx-2"><i class="fa fa-twitter-square" aria-hidden="true"></i></span>
-                        <span class="mx-2"><i class="fa fa-youtube-square" aria-hidden="true"></i></span>
+                        <span class="mx-2"><a href="https://www.facebook.com/BVMEngineeringCollege/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
+                        <span class="mx-2"><a href="https://www.linkedin.com/in/bvmcollege/?originalSubdomain=in" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
+                        <span class="mx-2"><a href="https://www.instagram.com/bvmtpc/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+                        <span class="mx-2"><a href="https://twitter.com/bvmtpc?lang=en" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></span>
+                        <span class="mx-2"><a href="https://www.youtube.com/watch?v=hqFIUhV8iA0" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></span>
                         </div>
                         </p>
                         
-                        <div class="rights a6">2021 &#174; Alumni , All Rights Reserved.</div>
+                        <div class="rights a6"> &#169;2021 bvm Alumni , All Rights Reserved.</div>
                   </div>
                  </div>
              </div>
          </div>
      </footer>
  </div>
-
-
 </div>
     );
 }
