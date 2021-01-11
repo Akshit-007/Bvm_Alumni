@@ -6,6 +6,7 @@ import pi2 from './p2.jpg'
 import pi3 from './p3.jpg'
 import image8 from './event1.jpg'
 import image7 from './event3.jpg'
+import './pevent.css'
 
 function Pevent()
 {
