@@ -38,7 +38,7 @@ useEffect(()=>{
       height="600px"
     />
     <Carousel.Caption>
-    <Link to='/login' style={{textDecoration: 'none'}}><button className="member">BE A  MEMBER ?</button></Link>
+    <Link to={process.env.PUBLIC_URL+'/login'} style={{textDecoration: 'none'}}><button className="member">BE A  MEMBER ?</button></Link>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -51,7 +51,7 @@ useEffect(()=>{
     />
 
     <Carousel.Caption>
-    <Link to='/login' style={{textDecoration: 'none'}}><button className="member">BE A  MEMBER ?</button></Link>
+    <Link to={process.env.PUBLIC_URL+'/login'} style={{textDecoration: 'none'}}><button className="member">BE A  MEMBER ?</button></Link>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -64,7 +64,7 @@ useEffect(()=>{
     />
 
     <Carousel.Caption>
-    <Link to='/login' style={{textDecoration: 'none'}}><button className="member">BE A  MEMBER ?</button></Link>
+    <Link to={process.env.PUBLIC_URL+'/login'} style={{textDecoration: 'none'}}><button className="member">BE A  MEMBER ?</button></Link>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
@@ -146,7 +146,7 @@ useEffect(()=>{
          <h1>Event Name</h1>
          <p>	<i class='far fa-calendar-alt'></i> 11/01/2022  </p>
          <p>    <i class='far fa-clock'></i> 9:00 AM  </p>
-         <Link to='/event' style={{textDecoration: 'none'}}><button  className="wevnt">Know More</button></Link>
+         <Link to={process.env.PUBLIC_URL+'/event'} style={{textDecoration: 'none'}}><button  className="wevnt">Know More</button></Link>
        </div>
        </div>
       </div>
@@ -163,7 +163,7 @@ useEffect(()=>{
       <h1>Event Name</h1>
       <p>	<i class='far fa-calendar-alt'></i> 11/01/2022  </p>
       <p><i class='far fa-clock'></i> 9:00 AM  </p>
-      <Link to='/event' style={{textDecoration: 'none'}}><button  className="wevnt">Know More</button></Link>
+      <Link to={process.env.PUBLIC_URL+'/event'} style={{textDecoration: 'none'}}><button  className="wevnt">Know More</button></Link>
     </div>
   </div>
 </div>
@@ -180,12 +180,12 @@ useEffect(()=>{
       <h1>Event Name</h1>
       <p>	<i class='far fa-calendar-alt'></i> 11/01/2022  </p>
       <p> <i class='far fa-clock'></i> 9:00 AM  </p>
-      <Link to='/event' style={{textDecoration: 'none'}}><button  className="wevnt">Know More</button></Link>
+      <Link to={process.env.PUBLIC_URL+'/event'} style={{textDecoration: 'none'}}><button  className="wevnt">Know More</button></Link>
     </div>
   </div>
 </div>
         </div>
-        <div className="event4"> <Link to='/event' style={{textDecoration: 'none'}}><button  className="wevnt">More Events</button></Link></div>
+        <div className="event4"> <Link to={process.env.PUBLIC_URL+'/event'} style={{textDecoration: 'none'}}><button  className="wevnt">More Events</button></Link></div>
     </div>
 <div className="pmessage">
 <div class="p-message">

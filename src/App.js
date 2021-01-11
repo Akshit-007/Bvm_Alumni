@@ -25,15 +25,15 @@ function App() {
     <Alumni />
     <div className="igp"></div>
       <Switch>
-        <Route path="/" exact component={Home}/>
-        <Route path="/event" exact component={Event}/>
-        <Route path="/login" exact component={Login}/>
-        <Route path="/mentor" exact component={News}/>
-        <Route path="/batchmates" exact component={Batchmate}/>
-        <Route path="/donation" exact component={Donation}/>
-        <Route path="/motivationa" exact component={Motivationa}/>
-        <Route path="/motivationb" exact component={Motivationb}/>
-        <Route path="/motivationc" exact component={Motivationc}/>
+        <Route path={process.env.PUBLIC_URL+"/"} exact component={Home}/>
+        <Route path={process.env.PUBLIC_URL+"/event"} exact component={Event}/>
+        <Route path={process.env.PUBLIC_URL+"/login"} exact component={Login}/>
+        <Route path={process.env.PUBLIC_URL+"/mentor"} exact component={News}/>
+        <Route path={process.env.PUBLIC_URL+"/batchmates"} exact component={Batchmate}/>
+        <Route path={process.env.PUBLIC_URL+"/donation"} exact component={Donation}/>
+        <Route path={process.env.PUBLIC_URL+"/motivationa"} exact component={Motivationa}/>
+        <Route path={process.env.PUBLIC_URL+"/motivationb"} exact component={Motivationb}/>
+        <Route path={process.env.PUBLIC_URL+"/motivationc"} exact component={Motivationc}/>
         </Switch>
      
     </Router>
