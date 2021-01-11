@@ -10,10 +10,17 @@
   
   height: 140px;
 }
-@media only screen and (max-width:680px)
+@media only screen and (max-width:680px) and (min-width:301px)
 {
   .igp{
   
     height: 105px;
+  }
+}
+@media only screen and (max-width:300px) and (min-width:250px)
+{
+  .igp{
+  
+    height: 145px;
   }
 }

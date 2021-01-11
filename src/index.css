@@ -10,7 +10,7 @@
 .img
 {
   /* background-color: blue; */
-  background-image: url('download.jpg');
+  background-image: url('bvmlogo1.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -524,7 +524,7 @@
   
 }
 
-@media only screen and (max-width:350px) and (min-width:281px)
+@media only screen and (max-width:350px) and (min-width:251px)
 {
   .fa-close{
     display: inline;
