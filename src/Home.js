@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import image1 from './bg.jpg'
-import image2 from './event.jpg'
+import image2 from './head.jpg'
 import image8 from './event1.jpg'
 import image7 from './event3.jpg'
 import image3 from './boys.webp'
@@ -20,13 +20,14 @@ function Home()
 
 useEffect(()=>{
   AOS.init({
-    duration:1000
+    duration:1500
   });
   AOS.refresh();
 },[])
     return(
         <div>
-
+       
+       
 <Carousel>
   <Carousel.Item>
     <img
@@ -74,17 +75,17 @@ useEffect(()=>{
     <ul>
       <div className="title">
       <Link to='/motivationa' style={{textDecoration: 'none'}}><li>Rise of a novelist in the league of BVMites </li></Link>
-    <Link to='/motivationb' style={{textDecoration: 'none'}}><li>Change your thoughts and you change your world</li></Link>
-    <Link to='/motivationc' style={{textDecoration: 'none'}}><li>Believe you can and you’re halfway there.</li></Link>
+     < Link to='/motivationb' style={{textDecoration: 'none'}}><li>Change your thoughts and you change your world</li></Link>
+      <Link to='/motivationc' style={{textDecoration: 'none'}}><li>Believe you can and you’re halfway there.</li></Link>
       </div>
     </ul>
     </marquee>
 </div>
 
-<h1 className="visit" data-aos="slide-up">Blogs</h1>
+<h1 className="visit" data-aos="zoom-in">Blogs</h1>
 
 
-    <div class="card-container">
+    <div class="card-container" data-aos="flip-down">
         <div class="cards">
           <header class="article-header">
             <h2 class="article-title">Inside Higher Education</h2>
@@ -133,7 +134,7 @@ useEffect(()=>{
         </div>
       </div>
 
-    <h1 className="visit" >Events</h1>
+    <h1 className="visit" data-aos="zoom-in">Events</h1>
     <div className="evntcard">
         <div className="event1">
          <div class="flip-card">
@@ -188,7 +189,7 @@ useEffect(()=>{
     </div>
 <div className="pmessage">
 <div class="p-message">
-        <p class="p3">Valuable Words of PRINCIPAL</p>
+        <p class="p3" data-aos="flip-up">Valuable Words of PRINCIPAL</p>
         <div class="p10">
           <div class="p101">
             <img src={image6} alt="principal-image"   class="p5" />
@@ -212,11 +213,11 @@ useEffect(()=>{
         </div>
       </div>
 </div>
-<h1 className="visit">Visit Us</h1>
+<h1 className="visit" data-aos="flip-down">Visit Us</h1>
 
 <div className="map">
-<div className="mapimg"></div>
-<div class="map-responsive">
+<div className="mapimg" data-aos="fade-down"></div>
+<div class="map-responsive" data-aos="fade-up">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.7105367330237!2d72.9216363147916!3d22.55251358519319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4e74c03b7749%3A0xab364c66fd4834c!2sBirla%20Vishvakarma%20Mahavidyalaya%20(BVM)!5e0!3m2!1sen!2sin!4v1609953923224!5m2!1sen!2sin" width="600" height="450" frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
 </div>
@@ -233,10 +234,10 @@ useEffect(()=>{
                      <div class="col-xl-2 col-md-4 col-sm-4 col-12 a2 ">
                          <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
                          <ul class="list-unstyled">
-                         <li><a href="/"  style={{textDecoration: 'none'}} class="text-muted">Home</a></li>
-                    <li><a href="/event"  style={{textDecoration: 'none'}} class="text-muted">Event</a></li>
-                    <li><a href="/news"  style={{textDecoration: 'none'}} class="text-muted">News</a></li>
-                    <li><a href="/batchmates"  style={{textDecoration: 'none'}} class="text-muted">Batchmates</a></li>                            
+                         <li><a href="/"  style={{textDecoration: 'none'}} class="text-muted fnav">Home</a></li>
+                    <li><a href="/event"  style={{textDecoration: 'none'}} class="text-muted fnav">Event</a></li>
+                    <li><a href="/news"  style={{textDecoration: 'none'}} class="text-muted fnav">News</a></li>
+                    <li><a href="/batchmates"  style={{textDecoration: 'none'}} class="text-muted fnav">Batchmates</a></li>                            
                          </ul>
                      </div>
                      <div class="col-xl-2 col-md-4 col-sm-4 col-12 a4">

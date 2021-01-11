@@ -6,7 +6,7 @@ function Motivation1()
 {
     return(
         <div className="mo">
-      
+       
      
  
           <div class="m1">

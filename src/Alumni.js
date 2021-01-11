@@ -1,14 +1,15 @@
 import React,{useState} from 'react';
 import { Link } from 'react-router-dom'
 import './index.css'
-import Mentor from './News'
-import Home from './Home'
+// import Mentor from './News'
+
 
 
 
  function Alumni() {
-    const dp=['home','event','donation','batchmate','login']
+  
     const [display,setdisplay]=useState(true);
+  
   
  
 
@@ -28,10 +29,12 @@ import Home from './Home'
 
   
 
+  
+
     
   return (
-   <div>
-    <div className="head">
+   <div className="ind">
+    <div className="head ">
     <div className="img"></div>
     <Link to='/'  style={{textDecoration: 'none' , color:'black'}}><div className="name">BVM,<br/> ALUMNI ASSOCIATION</div></Link>
     <div className="contact">
@@ -66,9 +69,12 @@ import Home from './Home'
             <Link to='/login' style={{textDecoration: 'none'}}><li  onClick={()=>{show()}}>LOGIN</li></Link>
             </ul>
     </div>:<div></div>}
-
- 
    
+  
+ 
+
+  
+  
  
   
    </div>

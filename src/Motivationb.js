@@ -5,6 +5,7 @@ function Motivation2()
 {
     return(
         <div> 
+          
             <div class="m1">
             <div class="heading">   
             <h1 class="m9 container">Change your thoughts and you change your world</h1>

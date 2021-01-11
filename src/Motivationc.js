@@ -5,6 +5,7 @@ function Motivationc()
 {
     return(
         <div> 
+     
              <div class="m1">
               <div class="heading">   
             <h1 class="m9 container">Whatever the mind of man can conceive and believe, it can achieve</h1>

@@ -23,6 +23,7 @@ function App() {
   
     <Router>
     <Alumni />
+    <div className="igp"></div>
       <Switch>
         <Route path="/" exact component={Home}/>
         <Route path="/event" exact component={Event}/>

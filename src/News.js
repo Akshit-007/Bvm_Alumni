@@ -1,13 +1,16 @@
 import React from 'react'
 import './mentor.css'
+import AOS from 'aos'
+import "aos/dist/aos.css"
 
 function News()
 {
     return(
         <div>
+            
             <div className="mentortitle">MENTOR</div>
               <div className="mentor">
-                <div className="mcard1 mcd">  
+                <div className="mcard1 mcd" >  
                   
                 <div className="mtl">IT</div>
                  
@@ -17,7 +20,7 @@ function News()
                     </div>
                 
                 </div>
-                <div className="mcard2 mcd">  
+                <div className="mcard2 mcd" >  
                   
                     <div className="mtl">COMPUTER</div>
 
@@ -27,7 +30,7 @@ function News()
                     </div>
                 
                 </div>
-                <div className="mcard3 mcd">  
+                <div className="mcard3 mcd" >  
                   
                 <div className="mtl">ELECTRICAL</div>
 
@@ -37,7 +40,7 @@ function News()
                     </div>
                 
                 </div>
-                <div className="mcard4 mcd">  
+                <div className="mcard4 mcd">   
                   
                     <div className="mtl">MECHANICAL</div>
 

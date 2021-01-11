@@ -1,8 +1,10 @@
 import React from 'react'
 import './don.css'
+
 function Donation() {
     return (
         <div>
+            
             <div class="container containermg">
                 <div class="row">
                     <div class="col-xs-12 col-md-12">
@@ -92,7 +94,7 @@ function Donation() {
                                                     <label class="control-label c sg">Country</label>
                                                     <div class="">
                                                         <select id="country" name="country" autocomplete="country" class="form-control">
-                                                            <option value="" selected="selected">(please select a country)</option>
+                                                            <option value="" selected="selected">(please select a country)  &#x25BC;</option>
                                                             <option value="AF">Afghanistan</option>
                                                             <option value="AQ">Antarctica</option>
                                                             
@@ -194,7 +196,7 @@ function Donation() {
                                 <div class="form-group ">
                                     <label for="cardNumber " class="sg ">Amount</label>
                                     <div class="input-group ihg">
-                                        <input type="text" class="form-control" name="Amount" placeholder="" required autofocus />
+                                        <input type="text" class="form-control" name="Amount" placeholder="&#8377;" required autofocus />
                                         <span class="input-group-addon"></span>
                                     </div>
                                 </div>
@@ -204,8 +206,8 @@ function Donation() {
                             <div class="col-sm-6">
                                 <label for="donateTye" class="sg">Frequency</label>
                                 <select name="donateType" id="donateType" class="form-control">
-
-                                    <option value="once">Once</option>
+                                <option value="" selected="selected">(please select option)  &#x25BC;</option>
+                                    <option value="once">Once </option>
                                     <option value="Monthly">Monthly</option>
                                     <option value="weekly">LifeTime</option>
                                 </select>

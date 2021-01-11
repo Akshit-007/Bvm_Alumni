@@ -16,14 +16,14 @@ return (
                                 </div>
                         <form id="libraryform">
                             <div class="form-group">
-                                <label class="form-control-label text-muted che5">Username</label> 
+                                <label class="form-control-label che5">Username</label> 
                                 <input type="text" id="email" name="email" placeholder="enter email id" class="form-control che4" />
                             </div>
                             <div class="form-group">
-                                <label class="form-control-label text-muted che5">Password</label>
-                                <input type="password" id="psw" name="psw" placeholder="Password" class="form-control" />
+                                <label class="form-control-label che5">Password</label>
+                                <input type="password" id="psw" name="psw" placeholder="Password" class="form-control che6" />
                             </div>
-                            <p class="che1 che2">select any from below  : :</p>
+                            <p class="che1 che2 ">select any from below  : :</p>
                             <label for="male" class="che1 che3">mentor</label>
                             <input type="radio" name="gender" id="male" value="male" />
                             <label for="female" class="che1 che3">mentees</label>

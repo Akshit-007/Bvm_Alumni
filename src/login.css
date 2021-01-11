@@ -131,8 +131,6 @@ a:hover {
 .sm-text {
     font-size: 15px
 }
-.che5{ font-size: 15px; }
-.che4{ margin-bottom: 10px; }
 .che1
 {
     margin-top: 10px;
@@ -141,7 +139,22 @@ a:hover {
 .card .che2 {
     margin-top: 15px;
     margin-bottom: 5px;}
-.card .che3 {margin-top: 0px;}
+.card .che3 {margin-top: 0px; margin-right: 5px; }
+.card .form-group .che5{ font-size: 18px; 
+color: #1839ca;
+margin-bottom: 5px;
+}
+.che4{ margin-bottom: 10px; 
+    border-radius: 20px;
+    border: 2px solid rgb(231, 85, 85);    
+}
+.che6
+{
+    border-radius: 20px;
+    border: 2px solid rgb(231,85,85);   
+}
+
+
 @media screen and (max-width: 992px) {
     .card1 {
         width: 100%;

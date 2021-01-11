@@ -1,7 +1,4 @@
-*{
-  margin: 0px;
-  
-}
+*{  margin: 0px;  }
 .head{
   width:100vw;
   height:110px;
@@ -133,8 +130,7 @@
 .nav{
   width:100vw;
   height:35px;
-  background-color: darksalmon;
- 
+  background-color: rgb(231, 71, 132);
 }
 .nav ul{
    /* background-color: darkturquoise; */
@@ -154,10 +150,10 @@
   
 }
 .nav ul li:hover{
-  background-color: rgb(171, 226, 168);
-  color:rgb(31, 34, 199);
+  background-color: rgb(209, 238, 154);
+  color:rgb(199, 37, 31);
   cursor: pointer;
-  border-bottom: 3px solid rgb(255, 5, 5);
+  border-bottom: 3px solid rgba(27, 11, 255, 0.726);
 
 }
 .nav1{
@@ -201,17 +197,17 @@
 {
   height:80px;
   width:300px;
-  background-color: rgb(233, 51, 224,0.2);
+  background-color: rgba(236, 12, 225, 0.2);
   color: white;
   font-weight: 500;
   font-size: 30px;
   border-radius: 10px;
-  border:2px solid rgb(233, 51, 224);
+  border:2px solid rgb(240, 6, 228);
   font-family: Courier New, monospace;
 }
 .member:hover{
-   background-color: rgb(255, 255, 255,0.6);
-   color:black;
+   background-color: rgb(224, 180, 180);
+   color:rgb(248, 250, 243);
 }
 
 .visit
@@ -265,7 +261,7 @@
   
   width:100vw;
   height:350px;
-  background-color: #515a75;
+  background-color: #5d5b5e;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 0.5fr;
   grid-template-areas:
@@ -632,11 +628,7 @@
      "e4"
    ;
  }
- .event1
- {
-   padding-left: 10px;
- 
- }
+ .event1  {padding-left: 10px;}
  .event2
  {
   padding-left: 10px;
@@ -710,13 +702,13 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: rgb(252, 96, 96);
+  background-color: rgb(28, 197, 6);
   color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: rgb(146, 183, 219);
+  background-color: rgb(58, 90, 124);
   color: white;
   transform: rotateY(180deg);
 }
@@ -848,6 +840,7 @@ body
     font-size: 20px;
     font-weight: 700;
     width:450px;
+    color: rgb(166, 255, 0);
 }
 .card-container .cards .p1{font-size: 19px;}
 .cards .article-header {    margin-bottom: auto;}
@@ -973,6 +966,24 @@ margin: center;
 
 .visit
 {
-  background-color:rgb(162 6 6);
+  background-color:rgb(233, 84, 38);
+  margin-bottom: 0px;
+  padding-bottom: 8px;
+}
+
+.fnav:hover
+{
+  color: black;
+  background-color: rgb(225, 248, 160);
+}
+
+
+.ind{
+  background-color: #afffff;
+   position: fixed;
+   z-index: 1;
 
 }
+
+
+

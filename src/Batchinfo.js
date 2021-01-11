@@ -126,7 +126,7 @@ export const info=[
         electrical:75,
     },
     {
-        id:"2015",
+        id:"2018",
         computer:94,
         it:80,
         mechanical:112,

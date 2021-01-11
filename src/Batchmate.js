@@ -49,7 +49,7 @@ function Batchmate()
 
     return(
         <div className="b">
-            
+        
             <div className="batchcard">
              
             
