@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import image2 from './images.jpg'
+
 import Uevent from './Uevent'
 import Pevent from './Pevents'
 import './event.css'
@@ -17,14 +16,14 @@ function Event()
     
     var text;
   
-    if(event==1)
+    if(event===1)
     {
         
        
           text=<Uevent />;
         
     }
-    else if(event==2)
+    else if(event===2)
     {
         text=<Pevent />;
    

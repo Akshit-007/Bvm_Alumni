@@ -1,6 +1,6 @@
 import React from 'react'
 import './mstyle.css';
-import Particles from 'react-particles-js';
+
 
 function Motivation1()
 {
