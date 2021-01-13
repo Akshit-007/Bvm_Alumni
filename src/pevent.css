@@ -1,171 +1,307 @@
-.ecard{
-  width:100vw;
-  height:700px;
-  background-color: #d48673; 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr ;
-  grid-template-areas:
-    "e1 e2 e3 e4"
-    "e5 e6 e7 e8"
-  ;
-  justify-content: center;
-}
-.et1
-{
-  padding-top: 20%;
-  grid-area: e1;
+.evnc{
+  
+    width:100vw;
+    height:750px;
+    background-color: #5d5b5e;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "ev1 ev2 ev3 ev4"
+      "ev5 ev6 ev7 ev8"
+    ;
+    justify-content: center;
+  }
+ 
+ .evn1
+  {
+     
+    padding-top: 20px;
+    grid-area: ev1;
+  }
+  .evn2
+  {
+    padding-top: 20px;
+    grid-area: ev2;  
+  }
+  .evn3
+  {
+    padding-top: 20px;
+    grid-area: ev3;
+  }
+  .evn4
+  {
+    padding-top: 20px;
+    grid-area: ev4;
+  }
+  .evn5
+  {
+    padding-top: 20px;
+    grid-area: ev5;
+  }
+  .evn6
+  {
+    padding-top: 20px;
+    grid-area: ev6; 
+  }
+  .evn7
+  {
+    padding-top: 20px;
+    grid-area: ev7;
+  }
+  .evn8
+  {
+    padding-top: 20px;
+    grid-area: ev8;
+  }
+ 
+  
+  .fcard {
+   
+    background-color: transparent;
+    width: 260px;
+    height: 220px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    border-radius: 10px;
+  
+  }
+  
+  /* This container is needed to position the front and back side */
+  .finner {
+  
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+  
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .fcard:hover .finner {
+    transform: rotateY(180deg);
+    box-shadow: 3px 0px 32px 2px #f5e7e0;
+  
+  }
+  
+  /* Position the front and back side */
+  .ffront, 
+  .fback {
+    padding-top: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 10px;
+  
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .ffront {
+    background-color: rgb(28, 197, 6);
+    color: black;
+  }
+  
+  /* Style the back side */
+  .fback {
+    background-color: rgb(58, 90, 124);
+    color: white;
+    transform: rotateY(180deg);
+  }
 
-}
-.et2
+  .wevn
 {
-  padding-top: 20%;
-  grid-area: e2; 
+  background-color: white;
+  border-radius: 20px;
+  color:blue;
 }
-.et3
-{
- /* background-color: rgb(190, 180, 165); */
-  padding-top: 20%;
-  grid-area: e3;
-}
-.et4
-{
-  padding-top: 20%;
-  grid-area: e4;
-}
-.et5
-{
-  padding-top: 20%;
-  grid-area: e5;
-}
-.et6
-{
-  padding-top: 20%;
-  grid-area: e6;
-}
-.et7
-{
-  padding-top: 20%;
-  grid-area: e7;
-}
-.et8
-{
-  padding-top: 20%;
-  grid-area: e8;
-
+.wevn:hover{
+  color:white;
+  background-color: rgb(0, 0, 255,0.5);
 }
 
-@media only screen and (max-width:1100px) and (min-width:601px)
+@media only screen and (max-width:1120px) and (min-width:831px)
 {
-    .ecard{
-  height:1400px;
+    .evnc{
+  
+        width:100vw;
+        height:750px;
+        background-color: #5d5b5e;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr ;
+        grid-template-areas:
+          "ev1 ev2 ev3"
+          "ev4 ev5 ev6"
+          "ev7 ev8 ev-1"
+        ;
         
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: 
-      
-            "e1 e2"
-            "e3 e4" 
-            "e5 e6"
-            "e7 e8"        
-      ;
-    }
+      }
 }
-@media only screen and (max-width:600px) and (min-width:401px)
+@media only screen and (max-width:830px) and (min-width:581px)
 {
-  .et1{
-    margin-left: 100px;
-  }
-  .et2{
-    margin-left: 100px;
-  }
-  .et3{
-    margin-left: 100px;
-  }
-  .et4{
-    margin-left: 100px;
-  }
-  .et5{
-    margin-left: 100px;
-  }
-  .et6{
-    margin-left: 100px;
-  }
-  .et7{
-    margin-left: 100px;
-  }
-  .et8{
-    margin-left: 100px;
-  }
-
-    
-
-  .ecard{
-      height:2600px;
-            
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-          grid-template-areas: 
-          
-                "e1"
-                "e2"
-                "e3"
-                "e4"
-                "e5"
-                "e6"
-                "e7"
-                "e8"
-                
-                      
-          ;
-        }
-    }
-@media only screen and (max-width:400px) and (min-width:200px)
+    .evnc{
+  
+        width:100vw;
+        height:1050px;
+        background-color: #5d5b5e;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "ev1 ev2"
+          "ev3 ev4"
+          "ev5 ev6"
+          "ev7 ev8"
+         
+        ;
+        
+      } 
+}
+@media only screen and (max-width:579px) and (min-width:460px)
 {
-  .et1{
-    margin-left: 20px;
-  }
-  .et2{
-    margin-left: 20px;
-  }
-  .et3{
-    margin-left: 20px;
-  }
-  .et4{
-    margin-left: 20px;
-  }
-  .et5{
-    margin-left: 20px;
-  }
-  .et6{
-    margin-left: 20px;
-  }
-  .et7{
-    margin-left: 20px;
-  }
-  .et8{
-    margin-left: 20px;
-  }
+    .evnc{
+  
+        width:100vw;
+        height:1050px;
+        background-color: #5d5b5e;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "ev1"
+          "ev2"
+          "ev3"
+          "ev4"
+          "ev5"
+          "ev6"
+          "ev7"
+          "ev8"
+         
+        ;
+ 
+   
 
-    
+        
+      } 
+      .evn1
+  {
+     
+    padding-left: 90px;
+    grid-area: ev1;
+  }
+  .evn2
+  {
+    padding-left: 90px;
+    grid-area: ev2;  
+  }
+  .evn3
+  {
+    padding-left: 90px;
+    grid-area: ev3;
+  }
+  .evn4
+  {
+    padding-left: 90px;
+    grid-area: ev4;
+  }
+  .evn5
+  {
+    padding-left: 90px;
+    grid-area: ev5;
+  }
+  .evn6
+  {
+    padding-left: 90px;
+    grid-area: ev6; 
+  }
+  .evn7
+  {
+    padding-left: 90px;
+    grid-area: ev7;
+  }
+  .evn8
+  {
+    padding-left: 90px;
+    grid-area: ev8;
+  }
+ 
+}
+@media only screen and (max-width:469px) and (min-width:200px)
+{
+    .evnc{
+  
+        width:100vw;
+        height:2050px;
+        background-color: #5d5b5e;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "ev1"
+          "ev2"
+          "ev3"
+          "ev4"
+          "ev5"
+          "ev6"
+          "ev7"
+          "ev8"
+         
+        ;
+ 
+   
 
-  .ecard{
-      height:2400px;
-            
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-          grid-template-areas: 
-          
-                "e1"
-                "e2"
-                "e3"
-                "e4"
-                "e5"
-                "e6"
-                "e7"
-                "e8"
-                
-                      
-          ;
-        }
-    }
+        
+      } 
+      .evn1
+  {
+     
+    padding-left: 10px;
+    grid-area: ev1;
+  }
+  .evn2
+  {
+    padding-left: 10px;
+    grid-area: ev2;  
+  }
+  .evn3
+  {
+    padding-left: 10px;
+    grid-area: ev3;
+  }
+  .evn4
+  {
+    padding-left: 10px;
+    grid-area: ev4;
+  }
+  .evn5
+  {
+    padding-left: 10px;
+    grid-area: ev5;
+  }
+  .evn6
+  {
+    padding-left: 10px;
+    grid-area: ev6; 
+  }
+  .evn7
+  {
+    padding-left: 10px;
+    grid-area: ev7;
+  }
+  .evn8
+  {
+    padding-left:10px;
+    grid-area: ev8;
+  }
+ 
+}
+
+
+
+
+  

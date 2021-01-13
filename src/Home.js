@@ -233,10 +233,10 @@ useEffect(()=>{
                      <div class="col-xl-2 col-md-4 col-sm-4 col-12 a2 ">
                          <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
                          <ul class="list-unstyled">
-                         <li><a href="/"  style={{textDecoration: 'none'}} class="text-muted fnav">Home</a></li>
-                    <li><a href="/event"  style={{textDecoration: 'none'}} class="text-muted fnav">Event</a></li>
-                    <li><a href="/news"  style={{textDecoration: 'none'}} class="text-muted fnav">News</a></li>
-                    <li><a href="/batchmates"  style={{textDecoration: 'none'}} class="text-muted fnav">Batchmates</a></li>                            
+                         <Link to={process.env.PUBLIC_URL+'/'} style={{textDecoration: 'none'}}><li >HOME</li></Link>
+                         <Link to={process.env.PUBLIC_URL+'/evebt'} style={{textDecoration: 'none'}}><li >EVENT</li></Link>
+                         <Link to={process.env.PUBLIC_URL+'/'} style={{textDecoration: 'none'}}><li >NEWS</li></Link>
+                         <Link to={process.env.PUBLIC_URL+'/'} style={{textDecoration: 'none'}}><li >BATCHMATES</li></Link>                           
                          </ul>
                      </div>
                      <div class="col-xl-2 col-md-4 col-sm-4 col-12 a4">
