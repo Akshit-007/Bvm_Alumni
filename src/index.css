@@ -265,7 +265,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 0.5fr;
   grid-template-areas:
-    "e1 e2 e3 e4"
+    "event1 event2 event3 event4"
   ;
   justify-content: center;
 }
@@ -273,7 +273,7 @@
 {
  /* background-color: blanchedalmond; */
   padding-top: 20%;
-  grid-area: e1;
+  grid-area: event1;
 
 }
 .event2
@@ -281,7 +281,7 @@
  /* background-color:red; */
 
   padding-top: 20%;
-  grid-area: e2;
+  grid-area: event2;
 
   
 }
@@ -290,14 +290,14 @@
  /* background-color: rgb(190, 180, 165); */
 
   padding-top: 20%;
-  grid-area: e3;
+  grid-area: event3;
 
 
 }
 .event4
 {
   padding-top: 20%;
-  grid-area: e4;
+  grid-area: event4;
   padding-top: 160px;
 
 }
@@ -305,7 +305,7 @@
   display: none;
 }
 
-.flip-card {
+.flcard {
  
   background-color: transparent;
   width: 260px;
@@ -317,7 +317,7 @@
 }
 
 /* This container is needed to position the front and back side */
-.flip-card-inner {
+.flinner {
 
   position: relative;
   width: 100%;
@@ -330,15 +330,15 @@
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.flcard:hover .flinner {
   transform: rotateY(180deg);
   box-shadow: 3px 0px 32px 2px #f5e7e0;
 
 }
 
 /* Position the front and back side */
-.flip-card-front, 
-.flip-card-back {
+.flfront, 
+.flback {
   padding-top: 10px;
   position: absolute;
   width: 100%;
@@ -350,13 +350,13 @@
 }
 
 /* Style the front side (fallback if image is missing) */
-.flip-card-front {
+.flfront {
   background-color: rgb(28, 197, 6);
   color: black;
 }
 
 /* Style the back side */
-.flip-card-back {
+.flback {
   background-color: rgb(58, 90, 124);
   color: white;
   transform: rotateY(180deg);
@@ -433,25 +433,31 @@
    grid-template-rows: 1fr 1fr ;
    grid-template-areas: 
       
-     "e1 e2"
-     "e3 e4"
+     "event1 event2"
+     "event3 event4"
      
    ;
  }
  .event1
  {
    padding-left: 30px;
+   grid-area: event1;
  }
  .event2
  {
    padding-left: 30px;
+   grid-area: event2;
+
  }
  .event3
  {
    padding-left: 30px;
+   grid-area: event3;
+
  }
  .event4
  {
+  grid-area: event4;
  
    justify-content: center;
    margin: 0px auto;
@@ -556,30 +562,34 @@
    grid-template-rows: 1fr 1fr 1fr 0.5fr;
    grid-template-areas: 
       
-     "e1"
-     "e2"
-     "e3"
-     "e4"
+     "event1"
+     "event2"
+     "event3"
+     "event4"
    ;
  }
  .event1
  {
    padding-left: 15%;
- 
+   grid-area: event1;
+   
  }
  .event2
  {
-  padding-left: 15%;
+   grid-area: event2;
+   padding-left: 15%;
 
  }
  .event3
  {
   padding-left: 15%;
-
+  grid-area: event3;
+  
  }
  .event4
  {
   padding-top: 20%;
+  grid-area: event4;
  
    justify-content: center;
    margin: 0px auto;
@@ -690,26 +700,33 @@
    grid-template-rows: 1fr 1fr 1fr 0.5fr;
    grid-template-areas: 
       
-     "e1"
-     "e2"
-     "e3"
-     "e4"
+     "event1"
+     "event2"
+     "event3"
+     "event4"
    ;
  }
- .event1  {padding-left: 10px;}
+ .event1  {
+   padding-left: 10px;
+   grid-area: event1;
+  
+  }
  .event2
  {
-  padding-left: 10px;
+   grid-area: event2;
+   padding-left: 10px;
 
  }
  .event3
  {
   padding-left: 10px;
+  grid-area: event3;
 
  }
  .event4
  {
   padding-top: 20%;
+  grid-area: event4;
  
    justify-content: center;
    margin: 0px auto;
@@ -725,75 +742,7 @@
 
 
 
-.flip-card {
- 
-  background-color: transparent;
-  width: 260px;
-  height: 220px;
-  /* border: 1px solid #f1f1f1; */
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  border-radius: 10px;
 
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  border-radius: 10px;
-
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-  box-shadow: 3px 0px 32px 2px #f5e7e0;
-
-}
-
-/* Position the front and back side */
-.flip-card-front, 
-.flip-card-back {
-  padding-top: 10px;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-  border-radius: 10px;
-
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: rgb(28, 197, 6);
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: rgb(58, 90, 124);
-  color: white;
-  transform: rotateY(180deg);
-}
-
-.wevnt
-{
-  background-color: white;
-  border-radius: 20px;
-  color:blue;
-}
-.wevnt:hover{
-  color:white;
-  background-color: rgb(0, 0, 255,0.5);
-
-
-}
 .mapimg{
   background-image: url('mimg.jpg');
   background-position: center;
